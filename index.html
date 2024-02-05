@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <title>Zaman Çizelgesi</title>
+</head>
+<body>
+    
+    <div class="kapsayici">
+
+        <div class="yirmibes">
+            <div class="cizelge">
+                <div class="satirlar" id="ders1">1. Ders <span>08:00 - 08:40</span></div>
+                <div class="satirlar" id="tnf1">Teneffüs <span>08:40 - 08:50</span></div>
+                <div class="satirlar" id="ders2">2. Ders <span>08:50 - 09:30</span></div>
+                <div class="satirlar" id="tnf2">Teneffüs <span>09:30 - 09:40</span></div>
+                <div class="satirlar" id="ders3">3. Ders <span>09:40 - 10:20</span></div>
+                <div class="satirlar" id="tnf3">Teneffüs <span>10:20 - 10:30</span></div>
+                <div class="satirlar" id="ders4">4. Ders <span>10:30 - 11:10</span></div>
+                <div class="satirlar" id="tnf4">Teneffüs <span>11:10 - 11:20</span></div>
+                <div class="satirlar" id="ders5">5. Ders <span>11:20 - 12:00</span></div>
+                <div class="satirlar" id="tnf5">Teneffüs <span>12:00 - 12:10</span></div>
+                <div class="satirlar" id="ders6">6. Ders <span>12:10 - 12:50</span></div>
+                <div class="satirlar" id="ogle">Öğlen Arası <span>12:50 - 13:30</span></div>
+                <div class="satirlar" id="ders7">7. Ders <span>13:30 - 14:10</span></div>
+                <div class="satirlar" id="tnf6">Teneffüs <span>14:10 - 14:15</span></div>
+                <div class="satirlar" id="ders8">8. Ders <span>14:15 - 14:55</span></div>
+                <div class="satirlar" id="tnf7">Teneffüs <span>14:55 - 15:05</span></div>
+                <div class="satirlar" id="ders9">9. Ders <span>15:05 - 15:45</span></div>
+                <div class="satirlar" id="tnf8">Teneffüs <span>15:45 - 15:50</span></div>
+                <div class="satirlar" id="ders10">10. Ders <span>15:50 - 16:30</span></div>
+                <div class="satirlar" id="tnf9">Teneffüs <span>16:30 - 16:35</span></div>
+                <div class="satirlar" id="ders11">11. Ders <span>16:35 - 17:15</span></div>
+                <div class="satirlar" id="tnf10">Teneffüs <span>17:15 - 17:20</span></div>
+                <div class="satirlar" id="ders12">12. Ders <span>17:20 - 18:00</span></div>
+            </div>
+        </div>
+    
+
+
+
+        <div class="yetmisbes">
+            <div class="banner">
+                <img src="images/code.png" alt="Logo">
+                <div class="baslik">
+                    <h1>YBM SOFTWARE SCHOOL<span class="cursor">|</span></h1>
+                </div>
+            </div>
+
+            <div class="slayt">
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <div class="slide first">
+                        <img src="images/1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/4.jpg" alt="">
+                    </div>
+                    <!--slide images end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+                <!--image slider end-->
+            </div>
+
+            <div class="kayaryazi">
+                <h2><marquee onmouseout="this.start();" onmouseover="this.stop();"><b>COVID-19 İÇİN ALINACAK ÖNLEMLER</b>
+                    Kapalı sınıflar sık sık havalandırılmalıdır.
+                    Sınıflarda Öğrenciler arasında en az 1 metre mesafe olması
+                    sağlanmalı ve çalışanlar maske takmalıdır.
+                </marquee></h2>
+            </div>
+
+            <div class="zaman">
+                <div class="suan"><h1 id="suan">00:00</h1></div>
+                <div class="kalanzaman"><h1 id="suankiSayim">00:00</h1></div>
+            </div>
+        </div>
+
+        <audio id="au">
+            <source src="zilsesi.mp4" type="audio/mpeg">
+        </audio>
+    </div>
+
+<script src="countdown.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
